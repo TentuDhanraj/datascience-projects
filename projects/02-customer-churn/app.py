@@ -31,7 +31,7 @@ def load_df(path='churn_cleaned_dataset.csv'):
 pipe = load_pipeline()
 sample_df = load_df()
 
-# If sample_df loaded, derive feature list
+# derive feature list
 if sample_df is not None:
     if 'Churn' in sample_df.columns:
         feature_cols = [c for c in sample_df.columns if c != 'Churn']
